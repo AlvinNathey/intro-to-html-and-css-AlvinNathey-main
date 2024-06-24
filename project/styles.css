@@ -157,3 +157,74 @@ main {
     background-color: #555;
     color: #fff;
 }
+
+.container-addexpense {
+    width: 100%; /* Full width */
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.container-addexpense {
+    display: flex;
+    justify-content: center;
+}
+
+.expense-form {
+    width: 100%; /* Full width */
+    max-width: 600px; /* Adjust as needed */
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    flex: 1 0 45%; /* Adjust width of each column */
+    margin-right: 5%; /* Add spacing between columns */
+    margin-bottom: 15px; /* Adjust spacing between rows */
+}
+
+.form-group:last-child {
+    margin-right: 0; /* Remove margin from last item to avoid extra space */
+}
+
+.expense-form label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left; /* Align labels to the left */
+}
+
+.expense-form input[type="date"],
+.expense-form input[type="number"],
+.expense-form textarea,
+.expense-form select {
+    width: 100%; /* Full width of input fields */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    margin-top: 5px; /* Adjust spacing between form elements */
+}
+
+.expense-form textarea {
+    height: 100px;
+}
+
+.expense-form .add-expense-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px; /* Adjust margin above the button */
+}
+
+.expense-form .add-expense-btn:hover {
+    background-color: #555;
+}
